@@ -1,0 +1,27 @@
+// Class MagicLeapHandTracking.LiveLinkMagicLeapHandTrackingSourceFactory
+// Size: 0x28 (Inherited: 0x28)
+struct ULiveLinkMagicLeapHandTrackingSourceFactory : ULiveLinkSourceFactory {
+};
+
+// Class MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary
+// Size: 0x28 (Inherited: 0x28)
+struct UMagicLeapHandTrackingFunctionLibrary : UBlueprintFunctionLibrary {
+
+	void SetStaticGestureConfidenceThreshold(enum class EMagicLeapHandTrackingGesture Gesture, float Confidence); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.SetStaticGestureConfidenceThreshold // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x128d480
+	bool SetConfiguration(struct TArray<enum class EMagicLeapHandTrackingGesture> StaticGesturesToActivate, enum class EMagicLeapHandTrackingKeypointFilterLevel KeypointsFilterLevel, enum class EMagicLeapHandTrackingGestureFilterLevel GestureFilterLevel, bool bTrackingEnabled); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.SetConfiguration // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x128d300
+	bool IsHoldingControl(enum class EControllerHand hand); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.IsHoldingControl // (Final|Native|Static|Public|BlueprintCallable|BlueprintPure) // @ game+0x128d280
+	float GetStaticGestureConfidenceThreshold(enum class EMagicLeapHandTrackingGesture Gesture); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetStaticGestureConfidenceThreshold // (Final|Native|Static|Public|BlueprintCallable) // @ game+0x128d200
+	bool GetMotionSourceForHandKeypoint(enum class EControllerHand hand, enum class EMagicLeapHandTrackingKeypoint Keypoint, struct FName OutMotionSource); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetMotionSourceForHandKeypoint // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x128d0f0
+	bool GetMagicLeapHandTrackingLiveLinkSource(struct FLiveLinkSourceHandle SourceHandle); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetMagicLeapHandTrackingLiveLinkSource // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x128d020
+	bool GetHandThumbTip(enum class EControllerHand hand, enum class EMagicLeapGestureTransformSpace TransformSpace, struct FTransform Secondary); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandThumbTip // (Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // @ game+0x128cec0
+	bool GetHandKeypointForMotionSource(struct FName MotionSource, enum class EMagicLeapHandTrackingKeypoint OutKeyPoint); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandKeypointForMotionSource // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x128cde0
+	bool GetHandIndexFingerTip(enum class EControllerHand hand, enum class EMagicLeapGestureTransformSpace TransformSpace, struct FTransform Pointer); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandIndexFingerTip // (Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // @ game+0x128cc80
+	bool GetHandCenterNormalized(enum class EControllerHand hand, struct FVector HandCenterNormalized); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandCenterNormalized // (Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // @ game+0x128cbb0
+	bool GetHandCenter(enum class EControllerHand hand, struct FTransform HandCenter); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandCenter // (Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // @ game+0x128ca90
+	bool GetGestureKeypointTransform(enum class EControllerHand hand, enum class EMagicLeapHandTrackingKeypoint Keypoint, enum class EMagicLeapGestureTransformSpace TransformSpace, struct FTransform Transform); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetGestureKeypointTransform // (Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable) // @ game+0x128c7f0
+	bool GetGestureKeypoints(enum class EControllerHand hand, struct TArray<struct FTransform> Keypoints); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetGestureKeypoints // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x128c9a0
+	bool GetCurrentGestureConfidence(enum class EControllerHand hand, float Confidence); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetCurrentGestureConfidence // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x128c710
+	bool GetCurrentGesture(enum class EControllerHand hand, enum class EMagicLeapHandTrackingGesture Gesture); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetCurrentGesture // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x128c630
+	bool GetConfiguration(struct TArray<enum class EMagicLeapHandTrackingGesture> ActiveStaticGestures, enum class EMagicLeapHandTrackingKeypointFilterLevel KeypointsFilterLevel, enum class EMagicLeapHandTrackingGestureFilterLevel GestureFilterLevel, bool bTrackingEnabled); // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetConfiguration // (Final|Native|Static|Public|HasOutParms|BlueprintCallable) // @ game+0x128c490
+};
+
